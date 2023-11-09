@@ -8,7 +8,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(Calc().sum(1, 2), 3)
 
     def test_sum2(self):
-        self.assertEqual(Calc().sum(1, 2), 3)
+        self.assertEqual(Calc().sum(1, 2), 6)
 
 
 if __name__ == '__main__':
