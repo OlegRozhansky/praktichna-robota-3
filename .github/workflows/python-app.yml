@@ -22,4 +22,13 @@ jobs:
       with:
         python-version: "3.10"
     - name: Test with pytest
-      run: python -m unittest calc_test.TestCalc
+      run: python -m unittest calc_test.TestCalc  
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: deploying
+      run: echo "app has been deployed"  
+    
